@@ -26,10 +26,10 @@ overflow:hidden; /*to remove any oversized effect that goes outside the button*/
     content: "";
     position: absolute;
     background-color: mediumaquamarine; /*color for the hover efffect*/
-    width: 20px; /*the size and the place of the effect*/
-    height: 20px;
-    left: 50%;
-    top: 50%;
+    width: 0; /*we made it 0 insted of 20px so it dessaper when not hovering*/
+    height: 0;
+    left: var(--xPos); /*for js we change this from 50% to be valuable to be controled by js*/
+    top: var(--yPos);
     transform: translate(-50% , -50%); 
     border-radius: 50%; /*make the corner as circle*/
     transition: width 1.2s, height 1.2s; /*making the animation smoother*/
