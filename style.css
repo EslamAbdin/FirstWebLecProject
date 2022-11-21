@@ -18,6 +18,10 @@ color: black ; /*black color font*/
 position: relative; /*to make the position in before work*/
 overflow:hidden; /*to remove any oversized effect that goes outside the button*/
 }
+/*bring the botton text to the top of the effect*/
+.btn span{
+    position: relative;
+    z-index: 1;}
 .btn::before{
     content: "";
     position: absolute;
