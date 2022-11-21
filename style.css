@@ -7,3 +7,12 @@ body{
     background-color: aqua; /*adding background color to the entir page*/
     font-family: sans-serif; /*changing the font that been used in the page*/
 }
+/*start to design the button*/
+.btn{
+background-color: darkgray; /*background color just for the botton*/
+padding: 20px 30px; /*incresing the size of the botton by adding padding*/
+border-radius: 10px; /*rounded corner*/
+box-shadow: 0 4px 8px rgba(0, 0, 0, .3); /*add black shadow around the botton*/
+text-decoration: none; /*remove the line that show on defult for the link*/
+color: black ; /*black color font*/
+}
