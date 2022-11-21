@@ -1,0 +1,9 @@
+body{
+    margin : 0 ; /*removing the defult marign in the page*/
+    display: flex ;
+    justify-self: center;
+    height: 100vh;
+    align-items: center; /*just making the items in the page to the center of the page*/
+    background-color: aqua; /*adding background color to the entir page*/
+    font-family: sans-serif; /*changing the font that been used in the page*/
+}
