@@ -16,16 +16,22 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, .3); /*add black shadow around the botton*/
 text-decoration: none; /*remove the line that show on defult for the link*/
 color: black ; /*black color font*/
 position: relative; /*to make the position in before work*/
+overflow:hidden; /*to remove any oversized effect that goes outside the button*/
 }
 .btn::before{
     content: "";
     position: absolute;
     background-color: mediumaquamarine; /*color for the hover efffect*/
-    width: 20px; 
+    width: 20px; /*the size and the place of the effect*/
     height: 20px;
     left: 50%;
     top: 50%;
-    transform: translate(-50% , -50%); /*the size and the place*/
+    transform: translate(-50% , -50%); 
     border-radius: 50%; /*make the corner as circle*/
     transition: width 1.2s, height 1.2s; /*making the animation smoother*/
+}
+/*the size of the effect while hovering*/
+.btn:hover::before{
+    width: 300px;
+    height: 300px; 
 }
