@@ -15,4 +15,17 @@ border-radius: 10px; /*rounded corner*/
 box-shadow: 0 4px 8px rgba(0, 0, 0, .3); /*add black shadow around the botton*/
 text-decoration: none; /*remove the line that show on defult for the link*/
 color: black ; /*black color font*/
+position: relative; /*to make the position in before work*/
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    background-color: mediumaquamarine; /*color for the hover efffect*/
+    width: 20px; 
+    height: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%); /*the size and the place*/
+    border-radius: 50%; /*make the corner as circle*/
+    transition: width 1.2s, height 1.2s; /*making the animation smoother*/
 }
