@@ -1,0 +1,1 @@
+beacuse the limit of how many characters in commit, only 50 ,i wrote some comments in the code to explain what i understood and done
